@@ -22,7 +22,7 @@ public class NetworkService {
     private NetworkService(){
         try{
             //Connect to server (localhost) for now
-            socket  = new Socket("localhost", 5005);
+            socket  = new Socket("127.0.0.1", 5005);
             
             out = new ObjectOutputStream(socket.getOutputStream());
             in = new ObjectInputStream(socket.getInputStream());
