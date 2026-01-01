@@ -56,6 +56,8 @@ public class SigninController {
             //Get network connection
             NetworkService network = NetworkService.getInstance();
             
+            network.sendRequest("SIGNUP");
+            
             //send the User object to the server
             network.sendRequest(newUser);
             
